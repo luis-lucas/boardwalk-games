@@ -1,0 +1,12 @@
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-heading: 'Macondo', cursive;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-family: var(--font-heading);
+}
