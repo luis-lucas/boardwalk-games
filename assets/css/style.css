@@ -21,3 +21,14 @@ h3 {
 .sub-heading-color {
     color: var(--highlight-color);
 }
+
+/* Grid visualization css for testing */
+
+.container, .row {
+    border: 2px solid white;
+}
+
+.col-12 {
+    border: 2px solid white;
+    background-color: lightgray;
+}
