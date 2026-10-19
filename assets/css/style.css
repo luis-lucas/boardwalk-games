@@ -100,6 +100,22 @@ h2 {
 #fav-games .card {
     border: none;
 }
+
+/* Events Section */
+
+.student-discount {
+   border: 2px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    color: white; 
+    display: inline-block;
+    padding: 4px 16px;
+}
+
+#join-events h2 {
+        font-size: 3.5rem;
+    }
+
+
  /* Footer \ Contact */
  #contact {
     background: var(--primary-color);
@@ -109,6 +125,7 @@ h2 {
 
  #contact h2 {
     color: white;
+    font-size: 2rem;
  }
 
  #contact .sub-heading-color {
@@ -178,5 +195,32 @@ h2 {
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 195px;
+    }
+}
+
+/* Events section - reduce table font size on mobile */
+@media screen and (max-width: 576px) {
+    #join-events table {
+        font-size: 0.8rem;
+    }
+    .student-discount {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    #join-events h2 {
+    font-size: 1.8rem;
+}
+}
+/* Events section - tablet */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    #join-events table {
+        font-size: 0.9rem;
+    }
+    #join-events h2 {
+        font-size: 3rem;
+    }
+    .student-discount {
+        font-size: 1rem;
+        padding: 4px 40px;
     }
 }
