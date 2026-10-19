@@ -224,3 +224,11 @@ h2 {
         padding: 4px 40px;
     }
 }
+
+
+/* Board reservation section - increase heading size on larger screens */
+@media screen and (min-width: 992px) {
+    #board-reservation h2 {
+        font-size: 3rem;
+    }
+}

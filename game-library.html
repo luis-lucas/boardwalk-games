@@ -42,7 +42,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                     <li class="nav-item">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html#join-events">Events</a>
                     </li>
                     <li class="nav-item">
@@ -50,7 +50,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact</a>
-                        <li class="nav-item">
+                    <li class="nav-item">
                         <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
                     </li>
                     </li>
@@ -68,7 +68,7 @@
                 <p class="my-4">Dive into a world of adventure, strategy, and fun with our carefully curated collection
                     of board games to rent or buy. From timeless classics to the latest sensations, our shelves are
                     packed with games waiting to be discovered.</p>
-                    <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
+                <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
             </div>
             <div class="col-12 col-xl-6">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -128,7 +128,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-2.webp" alt="Mystic Woods board game box">
+                        <img class="card-img-top" src="assets/images/new-games-2.webp"
+                            alt="Mystic Woods board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Mystic Woods</h3>
                             <p class="card-text">Enter the enchanted forest of Mystic Woods. Combine spells, gather
@@ -140,7 +141,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-3.webp" alt="Captain's Gambit board game box">
+                        <img class="card-img-top" src="assets/images/new-games-3.webp"
+                            alt="Captain's Gambit board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Captain's Gambit</h3>
                             <p class="card-text">Engage in battles, form fleeting alliances, and navigate treacherous
@@ -152,7 +154,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-4.webp" alt="Critter Quest board game box">
+                        <img class="card-img-top" src="assets/images/new-games-4.webp"
+                            alt="Critter Quest board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Critter Quest</h3>
                             <p class="card-text">Solve simple puzzles, collect magical gems, and help friends along the
@@ -172,7 +175,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-1.webp" alt="Settlers of Catan board game">
+                        <img class="card-img-top" src="assets/images/fav-games-1.webp"
+                            alt="Settlers of Catan board game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Settlers of Catan</h3>
                             <p class="card-text">Picture yourself in the era of discoveries: after a long voyage of
@@ -196,7 +200,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-3.webp" alt="Exploding Kittens card game">
+                        <img class="card-img-top" src="assets/images/fav-games-3.webp"
+                            alt="Exploding Kittens card game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Exploding Kittens</h3>
                             <p class="card-text">Exploding Kittens is a kitty-powered version of Russian Roulette.
@@ -222,10 +227,62 @@
                 </div>
             </div>
         </section>
+
+        <!-- Board game reservation form section -->
+        <section id="board-reservation" class="container section">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2>Reserve a game</h2>
+                </div>
+                <div class="col-12 col-lg-8 col-xl-8 mx-auto">
+                    <p>Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.</p>
+
+                    <form action="success.html" method="get">
+
+                        <div class="mb-3">
+                            <label for="full-name">Full name</label>
+                            <input id="full-name" name="full-name" class="form-control" type="text" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phone-number">Phone number</label>
+                            <input id="phone-number" name="phone-number" class="form-control" type="number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" class="form-control" type="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                        <select class="form-select" name="game-selection" id="game-selection" required>
+                                <option value="" selected disabled>Select game</option>
+                                <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                <option value="mystic-woods">Mystic Woods</option>
+                                <option value="capitan's-gambit">Captain's Gambit</option>
+                                <option value="critters-quest">Critter Quest</option>
+                                <option value="setters-of-catan">Setters of Catan</option>
+                                <option value="monopoly">Monopoly</option>
+                                <option value="exploding-kittens">Exploding Kittens</option>
+                                <option value="cluedo">Cluedo</option>
+                        </select>
+                        </div>
+
+                         <div class="mb-3">
+                            <label for="requested-date">Requested date</label>
+                            <input id="requested-date" name="requested-date" class="form-control" type="date" required>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn custom-button-outline mb-4">Reserve now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- footer / contact section -->
-     <!-- mt-auto added to push footer to the bottom of the page -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact" class="mt-auto">
         <div class="container section">
             <div class="row justify-content-center">
@@ -277,25 +334,25 @@
                                 <th scope="row">Mon</th>
                                 <td>Closed</td>
                                 <td></td>
-                                
+
                             </tr>
                             <tr>
                                 <th scope="row">Tue - Thur</th>
                                 <td>11am</td>
                                 <td>11pm</td>
-                                
+
                             </tr>
                             <tr>
                                 <th scope="row">Fri - Sat</th>
                                 <td>11am</td>
                                 <td>12am</td>
-                                
+
                             </tr>
                             <tr>
                                 <th scope="row">Sun</th>
                                 <td>12pm</td>
                                 <td>7am</td>
-                                
+
                             </tr>
                         </tbody>
                     </table>
