@@ -160,7 +160,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/services-3.webp" class="card-img-top" alt="A chess tournament being held at Boardwalk Games">
+                        <img src="assets/images/services-3.webp" class="card-img-top"
+                            alt="A chess tournament being held at Boardwalk Games">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Events</h3>
                             <p class="card-text">
@@ -197,7 +198,9 @@
         <!-- Events section -->
         <section id="join-events" class="container section">
             <div class="row">
-                <div class="col-12 text-center"><h2>Join our events</h2></div>
+                <div class="col-12 text-center">
+                    <h2>Join our events</h2>
+                </div>
                 <div class="col-12 col-xl-6">
                     <p>Whether you're delving into dungeons, reliving classic games, or competing in high-stakes
                         tournaments, there's something for every gamer. Reservations are recommended to ensure your spot
@@ -238,13 +241,13 @@
                         </tbody>
                     </table>
                     <div class="text-center">
-                    <p class="student-discount"><strong>*Get 20% off with valid student ID</strong></p>
+                        <p class="student-discount"><strong>*Get 20% off with valid student ID</strong></p>
                     </div>
                     <div class="text-center">
-                    <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
+                        <a href="booking.html" class="btn custom-button-outline mb-4">Book now</a>
                     </div>
                 </div>
-            </div>            
+            </div>
         </section>
     </main>
 
@@ -337,26 +340,26 @@
     <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
 
     <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-<script>
-    document
-        .querySelectorAll(".navbar-collapse .nav-link")
-        .forEach((link) => {
-            link.addEventListener("click", function (e) {
-                let section = document.querySelector(e.target.getAttribute("href"));
-                if (section) {
-                    e.preventDefault(); // Prevent default anchor click behavior
-                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                    window.scroll({
-                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                        behavior: "smooth",
-                    });
-                    document
-                        .querySelector(".navbar-collapse")
-                        .classList.remove("show"); // Collapse navbar
-                }
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
             });
-        });
-</script>
+    </script>
 
 </body>
 
